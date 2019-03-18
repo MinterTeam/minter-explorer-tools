@@ -33,3 +33,8 @@ type BlockAddresses struct {
 	Height    uint64
 	Addresses []string
 }
+
+type BlockValidators struct {
+	Height     uint64
+	Validators []*Validator
+}
