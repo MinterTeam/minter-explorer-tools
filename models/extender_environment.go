@@ -2,6 +2,8 @@ package models
 
 type ExtenderEnvironment struct {
 	AppName                     string
+	BaseCoin                    string
+	CoinsUpdateTime             int
 	Debug                       bool
 	DbName                      string
 	DbUser                      string
