@@ -5,7 +5,7 @@ import (
 )
 
 type Block struct {
-	ID                  uint64                `json:"id"`
+	ID                  uint64                `json:"id" sql:",pk"`
 	TotalTxs            uint64                `json:"total_txs" sql:"default:0"`
 	Size                uint64                `json:"size"`
 	ProposerValidatorID uint64                `json:"proposer_validator_id"`

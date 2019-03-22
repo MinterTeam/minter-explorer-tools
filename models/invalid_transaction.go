@@ -3,7 +3,7 @@ package models
 import "time"
 
 type InvalidTransaction struct {
-	ID            uint64    `json:"id"`
+	ID            uint64    `json:"id" sql:",pk"`
 	FromAddressID uint64    `json:"from_address_id"`
 	BlockID       uint64    `json:"block_id"`
 	CreatedAt     time.Time `json:"created_at"`

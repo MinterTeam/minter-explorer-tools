@@ -3,7 +3,7 @@ package models
 import "time"
 
 type Address struct {
-	ID                  uint64                `json:"id"`
+	ID                  uint64                `json:"id" sql:",pk"`
 	Address             string                `json:"address" sql:",unique; type:varchar(64)"`
 	UpdatedAtBlockId    uint64                `json:"updated_at_block_id"`
 	UpdatedAt           time.Time             `json:"updated_at"`

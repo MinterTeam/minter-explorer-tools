@@ -5,7 +5,7 @@ import (
 )
 
 type Coin struct {
-	ID                    uint64     `json:"id"`
+	ID                    uint64     `json:"id" sql:",pk"`
 	CreationAddressID     *uint64    `json:"creation_address_id"`
 	CreationTransactionID *uint64    `json:"creation_transaction_id"`
 	Crr                   uint64     `json:"crr"`

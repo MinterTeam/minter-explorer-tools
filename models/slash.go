@@ -3,7 +3,7 @@ package models
 const SlashEvent = "minter/SlashEvent"
 
 type Slash struct {
-	ID          uint64     `json:"id"`
+	ID          uint64     `json:"id" sql:",pk"`
 	CoinID      uint64     `json:"coin_id"`
 	BlockID     uint64     `json:"block_id"`
 	AddressID   uint64     `json:"address_id"`

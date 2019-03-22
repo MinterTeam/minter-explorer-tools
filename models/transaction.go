@@ -21,7 +21,7 @@ const TxTypeMultiSend = 13
 const TxTypeEditCandidate = 14
 
 type Transaction struct {
-	ID            uint64               `json:"id"`
+	ID            uint64               `json:"id" sql:",pk"`
 	FromAddressID uint64               `json:"from_address_id"`
 	Nonce         uint64               `json:"nonce"`
 	GasPrice      uint64               `json:"gas_price"`

@@ -1,7 +1,7 @@
 package models
 
 type Stake struct {
-	ID             uint64     `json:"id"`
+	ID             uint64     `json:"id" sql:",pk"`
 	OwnerAddressID uint64     `json:"owner_address_id"`
 	ValidatorID    uint64     `json:"validator_id"`
 	CoinID         uint64     `json:"coin_id"`
