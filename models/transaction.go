@@ -89,7 +89,7 @@ type DeclareCandidacyTxData struct {
 	PubKey     string `json:"pub_key"`
 	Commission string `json:"commission"`
 	Coin       string `json:"coin"`
-	Stake      string `json:"stake"`
+	Value      string `json:"value"`
 }
 
 type DelegateTxData struct {
