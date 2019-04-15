@@ -33,7 +33,7 @@ type Transaction struct {
 	Hash          string               `json:"hash"`
 	ServiceData   string               `json:"service_data"`
 	Data          interface{}          `json:"data"`
-	RawData       json.RawMessage      `json:"-"`
+	RawData       json.RawMessage      `json:"-" sql:"-"`
 	Tags          map[string]string    `json:"tags"`
 	Payload       []byte               `json:"payload"`
 	RawTx         []byte               `json:"raw_tx"`
