@@ -32,7 +32,8 @@ type Transaction struct {
 	Type          uint8                `json:"type"`
 	Hash          string               `json:"hash"`
 	ServiceData   string               `json:"service_data"`
-	Data          json.RawMessage      `json:"data"`
+	Data          interface{}          `json:"data"`
+	RawData       json.RawMessage      `json:"-"`
 	Tags          map[string]string    `json:"tags"`
 	Payload       []byte               `json:"payload"`
 	RawTx         []byte               `json:"raw_tx"`
