@@ -18,6 +18,7 @@ type ExtenderEnvironment struct {
 	TxChunkSize                 int
 	AddrChunkSize               int
 	EventsChunkSize             int
+	StakeChunkSize              int
 	WrkSaveRewardsCount         int
 	WrkSaveSlashesCount         int
 	WrkSaveTxsCount             int
