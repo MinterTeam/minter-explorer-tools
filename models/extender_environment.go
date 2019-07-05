@@ -28,7 +28,7 @@ type ExtenderEnvironment struct {
 	WrkSaveValidatorTxsCount        int
 	WrkUpdateBalanceCount           int
 	WrkGetBalancesFromNodeCount     int
-	WrkUpdateTxsIndexNumTxs         int
+	WrkUpdateTxsIndexNumBlocks      int
 	WrkUpdateTxsIndexTime           int
 	RewardAggregateEveryBlocksCount int
 	RewardAggregateTimeInterval     string
