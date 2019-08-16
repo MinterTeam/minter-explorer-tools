@@ -9,7 +9,7 @@ type AggregatedReward struct {
 	ValidatorID  uint64     `json:"validator_id"  sql:",pk"`
 	Role         string     `json:"role"          sql:",pk"`
 	Amount       string     `json:"amount"        sql:"type:numeric(70)"`
-	CreatedAt    time.Time  `json:"created_at"`
+	TimeID       time.Time  `json:"time_id"`
 	FromBlock    *Block     //Relation has one to Blocks
 	ToBlockBlock *Block     //Relation has one to Blocks
 	Address      *Address   //Relation has one to Addresses
