@@ -11,7 +11,7 @@ type AggregatedReward struct {
 	Amount       string     `json:"amount"        sql:"type:numeric(70)"`
 	TimeID       time.Time  `json:"time_id"`
 	FromBlock    *Block     //Relation has one to Blocks
-	ToBlockBlock *Block     //Relation has one to Blocks
+	ToBlock      *Block     //Relation has one to Blocks
 	Address      *Address   //Relation has one to Addresses
 	Validator    *Validator //Relation has one to Validators
 }
