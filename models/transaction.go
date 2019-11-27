@@ -122,8 +122,8 @@ type EditCandidateTxData struct {
 }
 
 type CreateMultisigTxData struct {
-	Threshold uint64   `json:"threshold"`
-	Weights   []uint64 `json:"weights"`
+	Threshold uint32   `json:"threshold"`
+	Weights   []uint32 `json:"weights"`
 	Addresses []string `json:"addresses"`
 }
 
