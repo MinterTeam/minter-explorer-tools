@@ -13,6 +13,7 @@ type Coin struct {
 	ReserveBalance        string     `json:"reserve_balance" sql:"type:numeric(70)"`
 	Name                  string     `json:"name"            sql:"type:varchar(255)"`
 	Symbol                string     `json:"symbol"          sql:"type:varchar(20)"`
+	MaxSupply             string     `json:"max_supply"      sql:"type:numeric(70)"`
 	UpdatedAt             time.Time  `json:"updated_at"`
 	DeletedAt             *time.Time `json:"deleted_at"      pg:",soft_delete"`
 }
