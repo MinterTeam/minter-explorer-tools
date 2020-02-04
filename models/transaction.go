@@ -6,7 +6,7 @@ import (
 )
 
 type Transaction struct {
-	ID            uint64               `json:"id" sql:",pk"`
+	ID            uint64               `json:"id" pg:",pk"`
 	FromAddressID uint64               `json:"from_address_id"`
 	Nonce         uint64               `json:"nonce"`
 	GasPrice      uint64               `json:"gas_price"`
@@ -18,7 +18,7 @@ type Transaction struct {
 	Hash          string               `json:"hash"`
 	ServiceData   string               `json:"service_data"`
 	Data          json.RawMessage      `json:"data"`
-	IData         interface{}          `json:"-" sql:"-"`
+	IData         interface{}          `json:"-" pg:"-"`
 	Tags          map[string]string    `json:"tags"`
 	Payload       []byte               `json:"payload"`
 	RawTx         []byte               `json:"raw_tx"`
