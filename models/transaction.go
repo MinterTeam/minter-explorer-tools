@@ -1,7 +1,6 @@
 package models
 
 import (
-	"encoding/json"
 	"time"
 )
 
@@ -32,9 +31,8 @@ type Transaction struct {
 	Type          uint8                `json:"type"`
 	Hash          string               `json:"hash"`
 	ServiceData   string               `json:"service_data"`
-	Data          json.RawMessage      `json:"data"`
-	IData         interface{}          `json:"-" sql:"-"`
-	Tags          map[string]string    `json:"tags"`
+	Data          interface{}          `json:"data"`
+	Tags          interface{}          `json:"tags"`
 	Payload       []byte               `json:"payload"`
 	RawTx         []byte               `json:"raw_tx"`
 	Block         *Block               `json:"block"`                                             //Relation has one to Blocks
