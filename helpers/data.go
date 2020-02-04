@@ -1,6 +1,7 @@
 package helpers
 
 import (
+	"encoding/json"
 	"math"
 )
 
@@ -16,4 +17,16 @@ func ComputeDataRange(dataLength int, chunkSize int, step int) (int, int) {
 	}
 
 	return start, end
+}
+
+func ConvertStruct(data interface{}, target interface{}) error {
+	bytes, err := json.Marshal(data)
+	if err != nil {
+		return err
+	}
+	err = json.Unmarshal(bytes, target)
+	if err != nil {
+		return err
+	}
+	return nil
 }
