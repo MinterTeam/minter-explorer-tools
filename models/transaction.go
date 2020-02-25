@@ -19,7 +19,7 @@ type Transaction struct {
 	ServiceData   string               `json:"service_data"`
 	Data          json.RawMessage      `json:"data"`
 	IData         interface{}          `json:"-" pg:"-" sql:"-"`
-	Tags          map[string]string    `json:"tags"`
+	Tags          json.RawMessage      `json:"tags"`
 	Payload       []byte               `json:"payload"`
 	RawTx         []byte               `json:"raw_tx"`
 	Block         *Block               `json:"block"`                                             //Relation has one to Blocks
