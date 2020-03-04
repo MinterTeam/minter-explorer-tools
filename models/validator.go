@@ -14,7 +14,7 @@ type Validator struct {
 	CreatedAtBlockID     *uint64    `json:"created_at_block_id"`
 	Status               *uint8     `json:"status"`
 	Commission           *uint64    `json:"commission"`
-	TotalStake           *string    `json:"total_stake" pg:"type:numeric(70)"`
+	TotalStake           *string    `json:"total_stake"`
 	PublicKey            string     `json:"public_key"  pg:"type:varchar(64)"`
 	Name                 *string    `json:"name"`
 	SiteUrl              *string    `json:"site_url"`
